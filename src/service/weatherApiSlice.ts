@@ -11,7 +11,7 @@ export const weatherApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: "https://api.openweathermap.org/data/2.5/" }),
   endpoints: (builder) => ({
     getWeather: builder.query<WeatherResponse, string>({
-      query: (city) => `weather?q=${city}&appid=8d24d4e62e63744172deebcc304d6eff&units=metric`,
+      query: (city) => `weather?q=${city}&appid=YOUR_API_KEY&units=metric`,
     }),
   }),
 });
